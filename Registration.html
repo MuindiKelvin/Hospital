@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial;
+    color: white;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    background-color: #111;
+}
+
+.right {
+    right: 0;
+    background-color: red;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+<h1>RegisterPatient</h1>
+<br>
+ <form action="patients.php" method="POST">
+PatientID<input type="text" name="patientId" required><br><br>
+FirstName<input type="text" name="firstname" required><br><br>
+SurName<input type="text" name="surname" required><br><br>
+NationalIDNO<input type="text" name="nationalIdno" required><br><br>
+DateOfBirth<input type="date" name="DateOfBirth" required><br><br>
+<label for="gender">Gender</label>
+<select name="gender"  >
+  <option>--select your Gender--</option>
+  <option value="male">Male</option>
+  <option value = "female">Female</option>
+  <option value = "bi-sexual">Bi-sexual</option>
+  </select><br><br>
+<label for="county">County</label>
+<select name="county" >
+  <option>--select County--</option>
+  <option>Baringo</option>
+  <option>Bomet</option>
+  <option>Bungoma</option>
+  <option>Busia</option>
+    <option>Elgeyo Marakwet</option>
+    <option>Embu</option>
+    <option>Garissa County</option>
+    <option>Homa Bay</option>
+    <option>Isiolo</option>
+    <option>Kajiado</option>
+    <option>Kakamega</option>
+    <option>Kericho</option>
+    <option>Kiambu</option>
+    <option>Kilifi</option>
+    <option>Kirinyaga</option>
+    <option>Kisii</option>
+    <option>Kisumu</option>
+    <option>Kitui</option>
+    <option>Kwale</option>
+    <option>Laikipia</option>
+    <option>Lamu</option>
+    <option>Machakos</option>
+    <option>Makueni</option>
+    <option>Mandera</option>
+    <option>Meru</option>
+    <option>Migori</option>
+    <option>Marsabit</option>
+    <option>Mombasa</option>
+    <option>Muranga</option>
+    <option>Nairobi</option>
+    <option>Nakuru</option>
+    <option>Nandi</option>
+    <option>Narok</option>
+    <option>Nyamira</option>
+    <option>Nyandarua</option>
+    <option>Nyeri</option>
+    <option>Samburu</option>
+    <option>Siaya</option>
+    <option>Taita Taveta</option>
+    <option>Tana River</option>
+    <option>Tharaka Nithi</option>
+    <option>Trans-Nzoia</option>
+    <option>Turkana</option>
+    <option>Uasin Gishu</option>
+    <option>Vihiga</option>
+    <option>Wajir</option>
+    <option>West Pokot</option>
+        </select><br><br>
+<input type="submit" value="submit"> <input type="reset" value="clear"><br><br>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <style>
+body{background-color:cyan }
+@media screen and (max-width: 320px)
+{@viewport{ width:320px;}} @media screen and (min-width:768px) and (max-width:959px) { @viewport{width: 768px;}}
+</style>
+  </div>
+</div>
+<div class="split right">
+  <div class="centered">
+ <h2>Register NextOfKin</h2>
+  <br>
+   <form action="kin.php" method="POST"
+<label for="patientId">patientId</label>
+<select name="patientId" >
+  <option>001</option>
+  <option>002</option>
+  <option>003</option>
+  <option>004</option>
+    <option>005</option>
+    <option>006</option>
+    <option>007</option>
+    <option>008</option>
+    <option>009</option>
+    <option>010</option>
+    <option>011</option>
+    <option>012</option>
+    <option>013</option>
+    <option>014</option>
+    <option>015</option>
+    <option>016</option>
+    <option>017</option>
+    <option>018</option>
+    <option>019</option>
+    <option>020</option>
+    <option>021</option>
+    <option>022</option>
+    <option>023</option>
+    <option>024</option>
+    <option>025</option>
+    <option>026</option>
+    <option>027</option>
+    <option>028</option>
+    <option>029</option>
+    <option>030</option>
+    <option>031</option>
+    <option>032</option>
+    <option>033</option>
+    <option>034</option>
+    <option>035</option>
+    <option>036</option>
+    <option>037</option>
+    <option>038</option>
+    <option>039</option>
+    <option>040</option>
+    <option>041</option>
+    <option>042</option>
+    <option>043</option>
+    <option>044</option>
+    <option>045</option>
+    <option>046</option>
+    <option>047</option>
+        </select><br><br>
+FirstName<br><input type="text" name="firstname"><br><br>
+SurName<br><input type="text" name="surname"><br><br>
+RelationShip<br><input type="text" name="relationship"><br><br>
+<input type="submit" value="submit"> <input type="reset" value="clear"><br><br>
+<style>
+@media screen and (max-width: 320px)
+{@viewport{ width:320px;}} @media screen and (min-width:768px) and (max-width:959px) { @viewport{width: 768px;}}
+</style>
+  </div>
+</div>
+    
+</body>
+
+</html> 
+ 

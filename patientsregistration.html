@@ -1,0 +1,117 @@
+﻿<title>www.mwananchiHospitalKenya/patientsform.org</title>
+</head>
+<head>
+<h1 style="color:red"; >MWANANCHI HOSPITAL KENYA ORGANIZATION</h1>
+<img src="hospital01.jpg" alt="logo" style="width:500px;height:200px;">
+</head>
+<body>
+
+<style>
+body{background-color:cyan;
+     text-align:center;}
+     ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:red;
+}
+
+li {
+    float:left;
+}
+
+li a {
+    display:inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:cyan;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="Hospital.html">Home</a></li>
+  <li><a href="patientsregistration.html">Registration</a></li>
+  <li><a href="records1.php">Records</a></li>
+  <li><a href="AboutHospital.html">About</a></li>
+</ul>
+ </style>
+<form action="patients.php" method="POST">
+<h3 style="color:red";>RegisterPatient</h3>
+PatientID<input type="text" name="patientId" required><br><br>
+FirstName<input type="text" name="firstname" required><br><br>
+SurName<input type="text" name="surname" required><br><br>
+NationalIDNO<input type="text" name="nationalIdno" required><br><br>
+DateOfBirth<input type="date" name="DateOfBirth" required><br><br>
+<label for="gender">Gender</label>
+<select name="gender"  >
+	<option>--select your Gender--</option>
+	<option value="male">Male</option>
+	<option value = "female">Female</option>
+	<option value = "bi-sexual">Bi-sexual</option>
+	</select><br><br>
+<label for="county">County</label>
+<select name="county" >
+	<option>--select County--</option>
+	<option>Baringo</option>
+	<option>Bomet</option>
+	<option>Bungoma</option>
+	<option>Busia</option>
+    <option>Elgeyo Marakwet</option>
+    <option>Embu</option>
+    <option>Garissa County</option>
+    <option>Homa Bay</option>
+    <option>Isiolo</option>
+    <option>Kajiado</option>
+    <option>Kakamega</option>
+    <option>Kericho</option>
+    <option>Kiambu</option>
+    <option>Kilifi</option>
+    <option>Kirinyaga</option>
+    <option>Kisii</option>
+    <option>Kisumu</option>
+    <option>Kitui</option>
+    <option>Kwale</option>
+    <option>Laikipia</option>
+    <option>Lamu</option>
+    <option>Machakos</option>
+    <option>Makueni</option>
+    <option>Mandera</option>
+    <option>Meru</option>
+    <option>Migori</option>
+    <option>Marsabit</option>
+    <option>Mombasa</option>
+    <option>Muranga</option>
+    <option>Nairobi</option>
+    <option>Nakuru</option>
+    <option>Nandi</option>
+    <option>Narok</option>
+    <option>Nyamira</option>
+    <option>Nyandarua</option>
+    <option>Nyeri</option>
+    <option>Samburu</option>
+    <option>Siaya</option>
+    <option>Taita Taveta</option>
+    <option>Tana River</option>
+    <option>Tharaka Nithi</option>
+    <option>Trans-Nzoia</option>
+    <option>Turkana</option>
+    <option>Uasin Gishu</option>
+    <option>Vihiga</option>
+    <option>Wajir</option>
+    <option>West Pokot</option>
+        </select><br><br>
+<input type="submit" value="submit"><br><br></td>
+<style>
+@media screen and (max-width: 320px)
+{@viewport{ width:320px;}} @media screen and (min-width:768px) and (max-width:959px) { @viewport{width: 768px;}}
+</style>
+</body>
+</html>
